@@ -7,7 +7,9 @@ TGO en Análisis y Desarrollo de Software
 
 | Temas | Tipo |
 |-------|------|
-|1. PHP |C |
-|2. POO |B |
+|1. PHP | PHP Orientado a Objetos |
+|2. POO | Objetos de Datos en PHP |
+|3. MVC | Modelos de Vista Controlador en PHP |
+|4. Laravel | Framework en PHP |
 
 ![Hollow](http://tinyurl.com/mpr4vsvd)
