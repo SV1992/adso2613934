@@ -1,0 +1,81 @@
+/* ------------------------- */
+/* V A R I A B L E S  */
+/* ------------------------- */
+
+
+:root {
+    --ff-heading: "Leckerli+One", sans-serif;
+    --ff-body: "Lora", sans-serif;
+    --color-first: #222831;
+    --color-second: #31363f;
+    --color-third: #76abae;
+    --color-fourth: #eeeeee;
+}
+
+/* ------------------------- */
+/* G E N E R A L  */
+/* ------------------------- */
+
+body {
+    background-color: var(--color-second);
+    font-family: var(--ff-body);
+    font-weight: 100;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    main {
+        background: url(../images/bg-main.png) no-repeat ;
+        height: 800px;
+        overflow: hidden;
+        width: 400px;
+    }
+}
+
+/* ------------------------- */
+/* 01 - W E L C O M E  */
+/* ------------------------- */
+
+main.welcome {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 0.4rem;
+        margin-left: 5.8rem;
+    }
+
+    section.slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.9rem;
+        margin-left: 0.5rem;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8.3rem;
+        a:is(:link, :visited){
+            background:url(../images/btn.png) no-repeat center ;
+            height: 60px;
+            display: flex;
+            justify-content: end;
+            padding-right: 20px;
+            align-items: center;
+            transition: all 0.4s ease-in;
+            width: 300px;
+        }
+        a:is(:hover){
+            background: url(../images/btn-hover.svg) no-repeat;
+            transform: scale(1.02) translateY(-5px);
+        }
+        a:is(:active){
+            background: url(../images/btn-active.svg) no-repeat;
+        }
+    }
+}
+
