@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameApp - Login</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/master.css">        
+    <link rel="stylesheet" href="css/master.css">
 </head>
+
 <body>
     <main class="login">
         <header>
@@ -17,19 +19,15 @@
             <img src="images/Logo-welcome.svg" alt="login">
 
             <svg class="btn-burger" viewBox="0 0 100 100" width="80">
-                <path
-                      class="line top"
-                      d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
-                <path
-                      class="line middle"
-                      d="m 70,50 h -40" />
-                <path
-                      class="line bottom"
-                      d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+                <path class="line top"
+                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+                <path class="line middle" d="m 70,50 h -40" />
+                <path class="line bottom"
+                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
             </svg>
         </header>
         <nav class="nav">
-            <img src="images/title-menu.svg" alt="" class="title-menu" >
+            <img src="" alt="" class="title-menu">
             <menu>
                 <a href="login.html">
                     <img src="images/ico-login.svg" alt="Login">
@@ -43,57 +41,67 @@
             </menu>
         </nav>
         <section>
-            <form action="dashboard.html" method="get" >                
-             <div class="form-group">
-                <label>
-                    <center><img src="images/ico-email.svg" alt="Email"> <br></center>
-                </label>
-                <center><input type="email" name="email" placeholder="******@****.***" maxlength="14"> <br></center>
-             </div>
-             <div class="form-group">
-                <label>
-                    <center><img src="images/ico-password.svg" alt="Password"> <br></center>
-                </label>
-                <label>
+            <form action="dashboard.html" method="get">
+                <div class="form-group">
+                    <label>
+                        <center>
+                            <img src="images/ico-email.svg" alt="Email">
+                            <br>
+                        </center>
+                    </label>
                     <center>
-                        <img class="ico-eye" src="images/ico-eye.svg" alt="Eye">
-                        <input type="password" name="password" placeholder="***************">
+                        <input type="email" name="email" placeholder="******@****.***" maxlength="14">
+                        <br>
                     </center>
-                </label>
-             </div>
-             <div class="form-group">
-                <footer>
-                    <a href="dashboard.html" class="Explore">LOGIN </a>
-                </footer>           
-             </div>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <center>
+                            <img src="images/ico-password.svg" alt="Password">
+                            <br>
+                        </center>
+                    </label>
+                    <label>
+                        <center>
+                            <img class="ico-eye" src="images/ico-eye.svg" alt="Eye">
+                            <input type="password" name="password" placeholder="***************">
+                        </center>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <footer>
+                        <a href="dashboard.html" class="Explore">LOGIN </a>
+                    </footer>
+                </div>
 
             </form>
         </section>
     </main>
-    
+
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function () {
-            
-            $('header').on('click', '.btn-burger', function(){
-            $(this).toggleClass('active')
-            $('.nav').toggleClass('active')
-        })
-        //----------------------------
-        $togglePass = false
-        $('section').on('click', '.ico-eye', function(){
-            !$togglePass ? $(this).next().attr('type', 'text')
-                         : $(this).next().attr('type', 'password')
-            
-            !$togglePass ? $(this).attr('src', 'images/ico-eye-open.svg')
-                         : $(this).attr('src', 'images/ico-eye.svg')
-            
-            $togglePass = !$togglePass
 
-        })
+            $('header').on('click', '.btn-burger', function () {
+                $(this).toggleClass('active')
+                $('.nav').toggleClass('active')
+            })
+            //----------------------------
+            $togglePass = false
+            $('section').on('click', '.ico-eye', function () {
+                !$togglePass ? $(this).next().attr('type', 'text')
+                    : $(this).next().attr('type', 'password')
+
+                !$togglePass ? $(this).attr('src', 'images/ico-eye-open.svg')
+                    : $(this).attr('src', 'images/ico-eye.svg')
+
+                $togglePass = !$togglePass
+
+            })
 
         })
     </script>
 </body>
+
 </html>
